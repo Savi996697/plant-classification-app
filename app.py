@@ -78,7 +78,7 @@ if uploaded_file is not None and model is not None:
         st.write("### No medicinal data available for this class.")
 
 elif uploaded_file is not None:
-    st.error("Model could not be loaded. Please check the logs.")
+    st.error("Model could not be loaded. Please try again.....")
 # Button to clear cache and restart app
 if st.button("Clear Cache & Restart"):
     st.experimental_rerun()
