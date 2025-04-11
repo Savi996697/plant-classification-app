@@ -58,9 +58,9 @@ if uploaded_file is not None and model is not None:
     with st.spinner("Processing image..."):
         # Preprocess and predict
         image = Image.open(uploaded_file)
-        #processed_image = preprocess_image(image)
-        #prediction = model.predict(processed_image)
-        #predicted_index = np.argmax(prediction)
+        processed_image = preprocess_image(image)
+        prediction = model.predict(processed_image)
+        predicted_index = np.argmax(prediction)
         class_name = class_labels[predicted_index]
     
     st.image(image, caption="Uploaded Image", use_container_width=True)
