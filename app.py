@@ -71,9 +71,9 @@ if uploaded_file is not None and model is not None:
         utilities = df.iloc[predicted_index]["Utilities"]
         remedies = df.iloc[predicted_index]["Remedies"]
         st.write("### Medicinal Uses:")
-        #st.write(utilities)
+        st.write(utilities)
         st.write("### Remedies:")
-        #st.write(remedies)
+        st.write(remedies)
     else:
         st.write("### No medicinal data available for this class.")
 
